@@ -1,0 +1,2 @@
+ $env:CONFIG_PATH="./configs/config.local.yaml"; go run ./cmd/api
+ $env:CONFIG_PATH="./configs/config.local.yaml"; go run ./cmd/admin

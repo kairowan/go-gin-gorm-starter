@@ -1,0 +1,27 @@
+app:
+  name: "go-gin-gorm-starter"
+  env: "local"
+  http: { host: "0.0.0.0", port: 8080, readTimeoutSec: 5, writeTimeoutSec: 10, idleTimeoutSec: 60 }
+  admin: { host: "0.0.0.0", port: 8081 }
+
+log: { level: "debug", json: false }
+
+jwt:
+  secret: "change-this-to-a-random-string"
+  issuer: "go-starter"
+  accessTokenTTLMin: 60
+
+db:
+  driver: "mysql"
+  dsn: "jdbc:mysql://103.242.12.10:3306/starter?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia%2FShanghai"
+  # 新增：用户名、密码（两个“常量配置”）
+  username: "root"
+  password: "Ghn20010413."
+
+  maxOpenConns: 50
+  maxIdleConns: 10
+  connMaxLifetimeMin: 60
+  autoMigrate: true
+  logLevel: "warn"   # silent/error/warn/info
+
+
