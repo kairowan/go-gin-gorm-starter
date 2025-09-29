@@ -13,10 +13,10 @@ jwt:
 
 db:
   driver: "mysql"
-  dsn: "jdbc:mysql://103.242.12.10:3306/starter?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia%2FShanghai"
+  dsn: "jdbc:mysql:你的数据库"
   # 新增：用户名、密码（两个“常量配置”）
-  username: "root"
-  password: "Ghn20010413."
+  username: "数据库名称"
+  password: "数据库密码"
 
   maxOpenConns: 50
   maxIdleConns: 10
